@@ -19,52 +19,17 @@ The **Grocery Store Management System** is a web application designed to manage 
 
 Ensure you have Python and MySQL installed on your system.
 
-### Setting Up the Environment
 
-1. **Clone the Repository**
+## Usage
 
-   ```bash
-   git clone https://github.com/your-username/grocery-store-management-system.git
-   cd grocery-store-management-system
-Create a Virtual Environment
+### Run the Flask Server
 
-bash
-Copy code
-python -m venv venv
-Activate the Virtual Environment
-
-On Windows:
-
-bash
-Copy code
-venv\Scripts\activate
-On macOS/Linux:
-
-bash
-Copy code
-source venv/bin/activate
-Install Dependencies
-
-bash
-Copy code
-pip install -r requirements.txt
-Configure the Database
-
-Update the sql_connection.py file with your MySQL database credentials.
-Ensure the following tables exist in your grocery_store database:
-products
-uom
-orders
-order_details
-Usage
-Run the Flask Server
-
-bash
-Copy code
+```bash
 python server.py
 The server will start on port 5000.
+```
 
-API Endpoints
+## API Endpoints
 
 GET /getUOM: Retrieve all units of measurement.
 GET /getProducts: Retrieve all products.
@@ -72,7 +37,9 @@ POST /insertProduct: Insert a new product. Requires JSON payload with product_na
 GET /getAllOrders: Retrieve all orders with their details.
 POST /insertOrder: Insert a new order. Requires JSON payload with customer_name, grand_total, and order_details.
 POST /deleteProduct: Delete a product by product_id.
-File Descriptions
+
+## File Descriptions
+
 server.py: Defines the Flask application and routes for API endpoints. It uses the DAO modules to interact with the database and provides responses in JSON format.
 
 products_dao.py: Contains functions for managing product-related database operations, such as retrieving all products, inserting new products, and deleting products.
