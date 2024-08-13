@@ -31,23 +31,23 @@ The server will start on port 5000.
 
 ## API Endpoints
 
-GET /getUOM: Retrieve all units of measurement.
-GET /getProducts: Retrieve all products.
-POST /insertProduct: Insert a new product. Requires JSON payload with product_name, uom_id, and price_per_unit.
-GET /getAllOrders: Retrieve all orders with their details.
-POST /insertOrder: Insert a new order. Requires JSON payload with customer_name, grand_total, and order_details.
-POST /deleteProduct: Delete a product by product_id.
+`GET /getUOM`: Retrieve all units of measurement.
+`GET /getProducts`: Retrieve all products.
+`POST /insertProduct`: Insert a new product. Requires JSON payload with product_name, uom_id, and price_per_unit.
+`GET /getAllOrders`: Retrieve all orders with their details.
+`POST /insertOrder`: Insert a new order. Requires JSON payload with customer_name, grand_total, and order_details.
+`POST /deleteProduct`: Delete a product by product_id.
 
 ## File Descriptions
 
 server.py: Defines the Flask application and routes for API endpoints. It uses the DAO modules to interact with the database and provides responses in JSON format.
 
-products_dao.py: Contains functions for managing product-related database operations, such as retrieving all products, inserting new products, and deleting products.
+`products_dao.py`: Contains functions for managing product-related database operations, such as retrieving all products, inserting new products, and deleting products.
 
-orderrs_dao.py: Contains functions for managing order-related database operations, including inserting orders, retrieving order details, and fetching all orders.
+`orderrs_dao.py`: Contains functions for managing order-related database operations, including inserting orders, retrieving order details, and fetching all orders.
 
-sql_connection.py: Manages the MySQL database connection. It ensures that a single connection is used throughout the application.
+`sql_connection.py`: Manages the MySQL database connection. It ensures that a single connection is used throughout the application.
 
-uom_dao.py: Provides functionality to retrieve all units of measurement from the database.
+`uom_dao.py`: Provides functionality to retrieve all units of measurement from the database.
 
-sidebar-menu.css: Styles the sidebar menu component, including layout, colors, hover effects, and responsiveness.
+`sidebar-menu.css`: Styles the sidebar menu component, including layout, colors, hover effects, and responsiveness.
