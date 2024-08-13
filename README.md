@@ -1,4 +1,3 @@
-
 # Grocery Store Management System
 
 ## Overview
@@ -30,20 +29,24 @@ Ensure you have Python and MySQL installed on your system.
 Create a Virtual Environment
 
 bash
+Copy code
 python -m venv venv
 Activate the Virtual Environment
 
 On Windows:
 
 bash
+Copy code
 venv\Scripts\activate
 On macOS/Linux:
 
 bash
+Copy code
 source venv/bin/activate
 Install Dependencies
 
 bash
+Copy code
 pip install -r requirements.txt
 Configure the Database
 
