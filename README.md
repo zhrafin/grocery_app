@@ -32,10 +32,15 @@ The server will start on port 5000.
 ## API Endpoints
 
 `GET /getUOM`: Retrieve all units of measurement.
+
 `GET /getProducts`: Retrieve all products.
+
 `POST /insertProduct`: Insert a new product. Requires JSON payload with product_name, uom_id, and price_per_unit.
+
 `GET /getAllOrders`: Retrieve all orders with their details.
+
 `POST /insertOrder`: Insert a new order. Requires JSON payload with customer_name, grand_total, and order_details.
+
 `POST /deleteProduct`: Delete a product by product_id.
 
 ## File Descriptions
